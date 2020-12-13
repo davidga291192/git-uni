@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Este texto es el título del documento</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="style.css">
+    <link>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="main.html">Robótica</a>
+            <a href="fotos.html">Fotos</a>
+            <a class="active" href="Videos.html">videos</a>
+            <a href="contacto.html">Contactanos</a>
+        </div>
+        <div style="padding-left:16px">
+            <h2>Videos</h2>
+
+        </div>
+        <div class="videos">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420">
+            <source src="videos/Impresionantes avances de la robótica 2020[1].mp4" type="video/mp4">
+           <script> 
+           
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+    </div>
+    <footer class="footer">
+        &copy; Derechos Reservados Missael Gallegos Andrade
+    </footer>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Este texto es el título del documento</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="style.css">
+    <link>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="main.html">Robótica</a>
+            <a href="fotos.html">Fotos</a>
+            <a href="videos.html">videos</a>
+            <a class="active" href="contacto.html">Contactanos</a>
+        </div>
+
+
+    </div>
+    <div class="center">
+        <div id="after_submit"></div>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <label class="required" for="name">Nombre:</label><br />
+                <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                <span id="name_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label class="required" for="email">Correo:</label><br />
+                <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label class="required" for="message">Mensaje:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <span id="message_validation" class="error_message"></span>
+            </div>
+
+            <input id="submit_button" type="submit" value="Send email" />
+    </div>
+    </form>
+    <footer class="footer">
+        &copy; Derechos Reservados Missael Gallegos Andrade
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
